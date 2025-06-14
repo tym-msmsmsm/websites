@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<script>
+    // Replace these URLs with your desired destinations
+    const buttonLinks = [
+        "https://tym-msmsmsm.github.io/chatcat/",
+        "https://tym-msmsmsm.github.io/naturemeetstechnology/"
+    ];
+    const buttonTexts = ["ChatCat", "Nature Meets Teechnology"];
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.container .glass.button').forEach((btn, idx) => {
+            btn.textContent = buttonTexts[idx] || "";
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = buttonLinks[idx] || "#";
+            });
+        });
+    });
+</script>
+<style>
+    .footer-glass {
+        max-width: 420px;
+        margin: 48px auto 24px auto;
+        padding: 18px 32px;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #0a2e2e;
+        background: linear-gradient(120deg, rgba(255,255,255,0.38) 0%, rgba(174,239,255,0.28) 100%);
+        border-radius: 18px;
+        border: 1.5px solid rgba(255,255,255,0.32);
+        box-shadow: 0 4px 24px 0 rgba(56,249,215,0.10);
+        backdrop-filter: blur(10px) saturate(160%);
+        -webkit-backdrop-filter: blur(10px) saturate(160%);
+        font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+    }
+</style>
+<div class="footer-glass" style="position: fixed; left: 0; right: 0; bottom: 0; margin-left: auto; margin-right: auto; z-index: 100;">
+    &copy; 2025 - tym-msmsmsm 
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tym-msmsmsm websites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            color: #183a3a;
+            background:
+                linear-gradient(120deg, rgba(67,233,123,0.55) 0%, rgba(56,249,215,0.55) 100%),
+                radial-gradient(ellipse at 80% 15%, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0) 60%),
+                radial-gradient(ellipse at 20% 85%, rgba(120,200,255,0.22) 0%, rgba(56,249,215,0) 70%),
+                url('data:image/svg+xml;utf8,<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="a" cx="50%" cy="50%" r="80%"><stop stop-color="%23aeefff" stop-opacity="0.8" offset="0%"/><stop stop-color="%2338f9d7" stop-opacity="0.6" offset="60%"/><stop stop-color="%2343e97b" stop-opacity="0.35" offset="100%"/></radialGradient><radialGradient id="b" cx="70%" cy="30%" r="30%"><stop stop-color="%23fff" stop-opacity="0.7" offset="0%"/><stop stop-color="%23fff" stop-opacity="0" offset="100%"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/><ellipse cx="1400" cy="300" rx="320" ry="120" fill="url(%23b)"/><ellipse cx="600" cy="800" rx="200" ry="80" fill="url(%23b)"/><circle cx="400" cy="300" r="110" fill="%23e0f7fa" fill-opacity="0.32"/><circle cx="1600" cy="700" r="90" fill="%23b2fefa" fill-opacity="0.22"/><ellipse cx="1000" cy="600" rx="200" ry="70" fill="%23fff" fill-opacity="0.13"/><ellipse cx="1550" cy="900" rx="120" ry="40" fill="%23fff" fill-opacity="0.10"/></svg>') center/cover no-repeat fixed;
+        }
+        .glass {
+            background: rgba(255,255,255,0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            backdrop-filter: blur(14px) saturate(160%);
+            -webkit-backdrop-filter: blur(14px) saturate(160%);
+            border-radius: 24px;
+            border: 1.5px solid rgba(255,255,255,0.32);
+        }
+        header {
+            max-width: 520px;
+            margin: 48px auto 32px auto;
+            padding: 32px 40px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #0a2e2e;
+            text-shadow: 0 2px 16px rgba(67,233,123,0.18), 0 1px 0 #fff;
+            background: linear-gradient(120deg, rgba(255,255,255,0.55) 0%, rgba(174,239,255,0.45) 100%);
+        }
+        header.glass {
+            background: linear-gradient(120deg, rgba(255,255,255,0.65) 0%, rgba(174,239,255,0.55) 100%);
+        }
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+        .glass.button {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0a2e2e;
+            background: linear-gradient(120deg, rgba(255,255,255,0.75) 0%, rgba(174,239,255,0.65) 100%);
+            border: 1.5px solid rgba(67,233,123,0.22);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(56,249,215,0.10);
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+            margin: 0 12px;
+            text-decoration: none;
+            backdrop-filter: blur(10px) saturate(160%);
+            -webkit-backdrop-filter: blur(10px) saturate(160%);
+        }
+        .glass.button:hover {
+            background: linear-gradient(120deg, rgba(174,239,255,0.85) 0%, rgba(67,233,123,0.75) 100%);
+            box-shadow: 0 8px 32px 0 rgba(56,249,215,0.18);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            header {
+            font-size: 1.5rem;
+            padding: 20px 10px;
+            }
+            .container {
+            max-width: 98vw;
+            gap: 20px;
+            }
+            .glass.button {
+            padding: 14px 18px;
+            font-size: 1rem;
+            }
+        }
+        body {
+            /* Frutiger Aero inspired background image from Unsplash */
+            background-image:
+            linear-gradient(120deg, rgba(67,233,123,0.55) 0%, rgba(56,249,215,0.55) 100%),
+            url('https://i.ytimg.com/vi/J_BwEIjCGHc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCDtFGSh3lw0FIrKcBdxXNkYek1dw');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        </style>
+        </head>
+        <body>
+            <!-- Google Fonts: Nunito for a soft, modern look -->
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+            <style>
+                body, header, .glass.button {
+                    font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+                }
+            </style>
+            <header class="glass" style="background: linear-gradient(120deg, rgba(255,255,255,0.38) 0%, rgba(174,239,255,0.28) 100%);">
+                tym-msmsmsm websites
+            </header>
+            <div class="container">
+                <a href="#" class="glass button" style="background: linear-gradient(120deg, rgba(255,255,255,0.32) 0%, rgba(174,239,255,0.22) 100%);">Button 1</a>
+                <a href="#" class="glass button" style="background: linear-gradient(120deg, rgba(255,255,255,0.32) 0%, rgba(174,239,255,0.22) 100%);">Button 2</a>
+            </div>
+        </body>
+        </html>
